@@ -205,7 +205,7 @@
         </AudioInputs>
     </FairlightAudioMixer>
     <MediaPlayers>
-        <MediaPlayer index="0" sourceType="Still" sourceIndex="1"/>
+        <MediaPlayer index="0" sourceType="Still" sourceIndex="0"/>
     </MediaPlayers>
     <MediaPool>
         <Stills>
@@ -281,18 +281,12 @@
         <Property device="4" property="Locked" value="False"/>
     </CameraControl>
     <MacroPool>
-        <Macro index="0" name="rec_intro" description="Start recording with fade or intro of some sort">
-            <Op id="MediaPlayerSourceStillIndex" mediaPlayer="0" index="0"/>
-            <Op id="MediaPlayerSourceStill" mediaPlayer="0"/>
+        <Macro index="0" name="fade_in_pause" description="fade or intro of some sort with a pause">
             <Op id="DownstreamKeyAuto" keyIndex="0"/>
-            <Op id="MacroSleep" frames="30"/>
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
+            <Op id="MacroSleep" frames="90"/>
         </Macro>
-        <Macro index="1" name="rec_trans_pause" description="A recording transition, intro to the transition then stop recording. When ready to proceed, the rest of the transition goes on">
-            <Op id="MediaPlayerSourceStillIndex" mediaPlayer="0" index="3"/>
-            <Op id="MediaPlayerSourceStill" mediaPlayer="0"/>
+        <Macro index="1" name="fade out" description="A recording transition, intro to the transition then stop recording. When ready to proceed, the rest of the transition goes on">
             <Op id="DownstreamKeyAuto" keyIndex="0"/>
-            <Op id="MacroSleep" frames="30"/>
         </Macro>
         <Macro index="2" name="rec_trans_resume" description="resume recording, finishing the transition">
             <Op id="MediaPlayerSourceStillIndex" mediaPlayer="0" index="3"/>
@@ -300,13 +294,7 @@
             <Op id="MacroSleep" frames="30"/>
             <Op id="DownstreamKeyAuto" keyIndex="0"/>
         </Macro>
-        <Macro index="3" name="rec_outro" description="At the end of the recording, add an outro ">
-            <Op id="MediaPlayerSourceStillIndex" mediaPlayer="0" index="1"/>
-            <Op id="MediaPlayerSourceStill" mediaPlayer="0"/>
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
-            <Op id="MacroSleep" frames="30"/>
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
-        </Macro>
+        <Macro index="3" name="rec_outro" description="At the end of the recording, add an outro "/>
         <Macro index="6" name="lb_SetKeyA" description="">
             <Op id="KeyFlyEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
             <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-9.00002"/>
