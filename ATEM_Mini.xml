@@ -12,13 +12,13 @@
                 <DVEParameters rate="30" logoRate="30" reverseDirection="False" flipFlop="False" effect="PushRight" fillSource="3010" keySource="3011" enableKey="True" preMultipliedKey="True" clip="50" gain="70" invertKey="False"/>
             </TransitionStyle>
             <Keys>
-                <Key index="0" type="Chroma" inputCut="0" inputFill="4" onAir="True" masked="False" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0">
+                <Key index="0" type="Chroma" inputCut="0" inputFill="4" onAir="True" masked="True" maskTop="9" maskBottom="-9" maskLeft="-10" maskRight="10">
                     <LumaParameters preMultiplied="True" clip="50" gain="70" inverse="False"/>
                     <AdvancedChromaParameters foregroundLevel="0" backgroundLevel="0" keyEdge="50" spillSuppress="0" flareSuppress="0" brightness="0" contrast="0" saturation="100" red="0" green="0" blue="0" cursorXPosition="15.38" cursorYPosition="-8.38" cursorSize="6.2" sampledY="0.0625" sampledCb="0.5" sampledCr="0.5"/>
                     <PatternParameters style="DiamondIris" inverse="False" size="50" symmetry="50" softness="83" xPosition="0.5" yPosition="0.5"/>
                     <DVEParameters maskEnabled="False" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0" shadowEnabled="False" lightSourceDirection="36" lightSourceAltitude="25" borderEnabled="True" borderStyle="None" borderBevelHue="0" borderBevelSaturation="0" borderBevelLuma="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelOpacity="100" borderBevelPosition="0" borderBevelSoftness="0"/>
-                    <FlyParameters enabled="True" xPosition="8" yPosition="0" xSize="0.63" ySize="0.63" rotation="0" rate="7">
-                        <KeyFrameA xSize="0.63" ySize="0.63" xPosition="8" yPosition="0" rotation="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelSoftness="0" borderBevelPosition="0" borderOpacity="100" borderHue="0" borderSaturation="0" borderLuma="0" borderLightSourceDirection="36" borderLightSourceAltitude="25" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0"/>
+                    <FlyParameters enabled="True" xPosition="12" yPosition="-6" xSize="0.41" ySize="0.41" rotation="0" rate="7">
+                        <KeyFrameA xSize="0.41" ySize="0.41" xPosition="12" yPosition="-6" rotation="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelSoftness="0" borderBevelPosition="0" borderOpacity="100" borderHue="0" borderSaturation="0" borderLuma="0" borderLightSourceDirection="36" borderLightSourceAltitude="25" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0"/>
                         <KeyFrameB xSize="0.63" ySize="0.63" xPosition="8" yPosition="0" rotation="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelSoftness="0" borderBevelPosition="0" borderOpacity="100" borderHue="0" borderSaturation="0" borderLuma="0" borderLightSourceDirection="36" borderLightSourceAltitude="25" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0"/>
                     </FlyParameters>
                 </Key>
@@ -189,17 +189,10 @@
     </MediaPlayers>
     <MediaPool>
         <Stills>
-            <Still index="0" name="rec_intro 2" path="ATEM Media Pool/rec_intro 2.png"/>
-            <Still index="1" name="rec_outro 2" path="ATEM Media Pool/rec_outro 2.png"/>
-            <Still index="2" name="lower_third 2" path="ATEM Media Pool/lower_third 2.png"/>
-            <Still index="3" name="rec_transition 2" path="ATEM Media Pool/rec_transition 2.png"/>
-            <Still index="4" name="str_before 2" path="ATEM Media Pool/str_before 2.png"/>
-            <Still index="5" name="str_intro 2" path="ATEM Media Pool/str_intro 2.png"/>
-            <Still index="6" name="str_transition 2" path="ATEM Media Pool/str_transition 2.png"/>
-            <Still index="7" name="str_brb 2" path="ATEM Media Pool/str_brb 2.png"/>
-            <Still index="8" name="str_outro 2" path="ATEM Media Pool/str_outro 2.png"/>
+            <Still index="4" name="rec_intro 2" path="ATEM Media Pool/rec_intro 2.png"/>
+            <Still index="5" name="rec_outro 2" path="ATEM Media Pool/rec_outro 2.png"/>
+            <Still index="6" name="rec_transition 2" path="ATEM Media Pool/rec_transition 2.png"/>
             <Still index="16" name="campus1 2" path="ATEM Media Pool/campus1 2.png"/>
-            <Still index="17" name="campus2 2" path="ATEM Media Pool/campus2 2.png"/>
         </Stills>
     </MediaPool>
     <CameraControl>
