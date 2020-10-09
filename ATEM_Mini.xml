@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile majorVersion="1" minorVersion="5" product="ATEM Mini Pro">
+<Profile majorVersion="1" minorVersion="5" product="ATEM Mini">
     <MixEffectBlocks>
         <MixEffectBlock index="0">
             <Program input="1"/>
             <Preview input="1"/>
             <NextTransition selection="Background" nextSelection="Background"/>
             <TransitionStyle style="Mix" nextStyle="Mix" previewTransition="False" transitionPosition="0">
-                <MixParameters rate="30"/>
-                <DipParameters rate="30" input="2001"/>
+                <MixParameters rate="250"/>
+                <DipParameters rate="250" input="2001"/>
                 <WipeParameters rate="30" pattern="DiamondIris" symmetry="50" xPosition="0.5" yPosition="0.5" reverseDirection="False" flipFlip="False" borderInput="2001" borderWidth="0" borderSoftness="83"/>
                 <DVEParameters rate="30" logoRate="30" reverseDirection="False" flipFlop="False" effect="PushRight" fillSource="3010" keySource="3011" enableKey="True" preMultipliedKey="True" clip="50" gain="70" invertKey="False"/>
             </TransitionStyle>
             <Keys>
-                <Key index="0" type="Chroma" inputCut="3011" inputFill="4" onAir="False" masked="False" maskTop="9" maskBottom="-9" maskLeft="-16" maskRight="16">
+                <Key index="0" type="Chroma" inputCut="0" inputFill="4" onAir="True" masked="False" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0">
                     <LumaParameters preMultiplied="True" clip="50" gain="70" inverse="False"/>
-                    <AdvancedChromaParameters foregroundLevel="0" backgroundLevel="0" keyEdge="50" spillSuppress="0" flareSuppress="0" brightness="0" contrast="0" saturation="100" red="0" green="0" blue="0" cursorXPosition="15.38" cursorYPosition="-8.38" cursorSize="6.25" sampledY="0.0625" sampledCb="0.5" sampledCr="0.5"/>
+                    <AdvancedChromaParameters foregroundLevel="0" backgroundLevel="0" keyEdge="50" spillSuppress="0" flareSuppress="0" brightness="0" contrast="0" saturation="100" red="0" green="0" blue="0" cursorXPosition="15.38" cursorYPosition="-8.38" cursorSize="6.2" sampledY="0.0625" sampledCb="0.5" sampledCr="0.5"/>
                     <PatternParameters style="DiamondIris" inverse="False" size="50" symmetry="50" softness="83" xPosition="0.5" yPosition="0.5"/>
-                    <DVEParameters maskEnabled="False" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0" shadowEnabled="False" lightSourceDirection="36" lightSourceAltitude="25" borderEnabled="True" borderStyle="None" borderBevelHue="0" borderBevelSaturation="0" borderBevelLuma="0" borderWidthOut="0" borderWidthIn="0.2" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelOpacity="100" borderBevelPosition="0" borderBevelSoftness="0"/>
-                    <FlyParameters enabled="False" xPosition="12.5" yPosition="7" xSize="0.2" ySize="0.2" rotation="0" rate="30"/>
+                    <DVEParameters maskEnabled="False" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0" shadowEnabled="False" lightSourceDirection="36" lightSourceAltitude="25" borderEnabled="True" borderStyle="None" borderBevelHue="0" borderBevelSaturation="0" borderBevelLuma="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelOpacity="100" borderBevelPosition="0" borderBevelSoftness="0"/>
+                    <FlyParameters enabled="True" xPosition="8" yPosition="0" xSize="0.63" ySize="0.63" rotation="0" rate="7">
+                        <KeyFrameA xSize="0.63" ySize="0.63" xPosition="8" yPosition="0" rotation="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelSoftness="0" borderBevelPosition="0" borderOpacity="100" borderHue="0" borderSaturation="0" borderLuma="0" borderLightSourceDirection="36" borderLightSourceAltitude="25" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0"/>
+                        <KeyFrameB xSize="0.63" ySize="0.63" xPosition="8" yPosition="0" rotation="0" borderWidthOut="0" borderWidthIn="0" borderSoftnessOut="0" borderSoftnessIn="0" borderBevelSoftness="0" borderBevelPosition="0" borderOpacity="100" borderHue="0" borderSaturation="0" borderLuma="0" borderLightSourceDirection="36" borderLightSourceAltitude="25" maskTop="0" maskBottom="0" maskLeft="0" maskRight="0"/>
+                    </FlyParameters>
                 </Key>
             </Keys>
             <FadeToBlack rate="30" isFullyBlack="False"/>
         </MixEffectBlock>
     </MixEffectBlocks>
     <DownstreamKeys>
-        <DownstreamKey index="0" fillSource="3010" keySource="3011" rate="20" maskEnabled="False" maskTop="9" maskBottom="-9" maskLeft="-16" maskRight="16" preMultipliedKey="True" clip="50" gain="70" invert="False" onAir="False" tie="False"/>
+        <DownstreamKey index="0" fillSource="3010" keySource="3011" rate="10" maskEnabled="False" maskTop="9" maskBottom="-9" maskLeft="-16" maskRight="16" preMultipliedKey="True" clip="50" gain="70" invert="False" onAir="False" tie="False"/>
     </DownstreamKeys>
     <ColorGenerators>
         <ColorGenerator index="0" hue="0" saturation="0" luma="100"/>
@@ -34,35 +37,12 @@
         <Auxiliary id="8001" input="10010"/>
     </Auxiliaries>
     <Settings abDirect="True" cameraAux="-1">
-        <MultiViewVideoModes>
-            <MultiViewVideoMode coreVideoMode="1080p2398" multiViewVideoMode="1080p2398"/>
-            <MultiViewVideoMode coreVideoMode="1080p24" multiViewVideoMode="1080p24"/>
-            <MultiViewVideoMode coreVideoMode="1080p25" multiViewVideoMode="1080p25"/>
-            <MultiViewVideoMode coreVideoMode="1080p2997" multiViewVideoMode="1080p2997"/>
-            <MultiViewVideoMode coreVideoMode="1080p30" multiViewVideoMode="1080p30"/>
-            <MultiViewVideoMode coreVideoMode="1080p50" multiViewVideoMode="1080p50"/>
-            <MultiViewVideoMode coreVideoMode="1080p5994" multiViewVideoMode="1080p5994"/>
-            <MultiViewVideoMode coreVideoMode="1080p60" multiViewVideoMode="1080p60"/>
-        </MultiViewVideoModes>
         <Inputs>
             <Input id="1" shortName="CAM1" longName="Camera 1" externalPortType="HDMI"/>
             <Input id="2" shortName="CAM2" longName="Camera 2" externalPortType="HDMI"/>
             <Input id="3" shortName="CAM3" longName="Camera 3" externalPortType="HDMI"/>
             <Input id="4" shortName="CAM4" longName="Camera 4" externalPortType="HDMI"/>
         </Inputs>
-        <MultiViews>
-            <MultiView index="0" layout="ProgramTop" LayoutID="12" vuMeterOpacity="1" programPreviewSwapped="False">
-                <Windows>
-                    <Window index="0" input="10011" vuMeterEnabled="False" safeAreaEnabled="True"/>
-                    <Window index="1" input="10010" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                    <Window index="2" input="1" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                    <Window index="3" input="2" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                    <Window index="4" input="3" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                    <Window index="5" input="4" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                    <Window index="6" input="3010" vuMeterEnabled="False" safeAreaEnabled="False"/>
-                </Windows>
-            </MultiView>
-        </MultiViews>
         <ButtonMapping>
             <Button index="0" externalInputIndex="0" mappedToCamera="True"/>
             <Button index="1" externalInputIndex="1" mappedToCamera="True"/>
@@ -77,7 +57,7 @@
         </ButtonMapping>
         <UpstreamKeys sizeLink="True"/>
     </Settings>
-    <VideoMode videoMode="1080p60"/>
+    <VideoMode videoMode="1080p24"/>
     <HyperDecks>
         <HyperDeck id="0" networkAddress="0.0.0.0" input="0" autoRoll="False" autoRollFrameDelay="0"/>
         <HyperDeck id="1" networkAddress="0.0.0.0" input="0" autoRoll="False" autoRollFrameDelay="0"/>
@@ -205,21 +185,21 @@
         </AudioInputs>
     </FairlightAudioMixer>
     <MediaPlayers>
-        <MediaPlayer index="0" sourceType="Still" sourceIndex="0"/>
+        <MediaPlayer index="0" sourceType="Still" sourceIndex="3"/>
     </MediaPlayers>
     <MediaPool>
         <Stills>
-            <Still index="0" name="rec_intro" path="ATEM Media Pool/rec_intro.png"/>
-            <Still index="1" name="rec_outro" path="ATEM Media Pool/rec_outro.png"/>
-            <Still index="2" name="lower_third" path="ATEM Media Pool/lower_third.png"/>
-            <Still index="3" name="rec_transition" path="ATEM Media Pool/rec_transition.png"/>
-            <Still index="4" name="str_before" path="ATEM Media Pool/str_before.png"/>
-            <Still index="5" name="str_intro" path="ATEM Media Pool/str_intro.png"/>
-            <Still index="6" name="str_transition" path="ATEM Media Pool/str_transition.png"/>
-            <Still index="7" name="str_brb" path="ATEM Media Pool/str_brb.png"/>
-            <Still index="8" name="str_outro" path="ATEM Media Pool/str_outro.png"/>
-            <Still index="16" name="campus1" path="ATEM Media Pool/campus1.png"/>
-            <Still index="17" name="campus2" path="ATEM Media Pool/campus2.png"/>
+            <Still index="0" name="rec_intro 2" path="ATEM Media Pool/rec_intro 2.png"/>
+            <Still index="1" name="rec_outro 2" path="ATEM Media Pool/rec_outro 2.png"/>
+            <Still index="2" name="lower_third 2" path="ATEM Media Pool/lower_third 2.png"/>
+            <Still index="3" name="rec_transition 2" path="ATEM Media Pool/rec_transition 2.png"/>
+            <Still index="4" name="str_before 2" path="ATEM Media Pool/str_before 2.png"/>
+            <Still index="5" name="str_intro 2" path="ATEM Media Pool/str_intro 2.png"/>
+            <Still index="6" name="str_transition 2" path="ATEM Media Pool/str_transition 2.png"/>
+            <Still index="7" name="str_brb 2" path="ATEM Media Pool/str_brb 2.png"/>
+            <Still index="8" name="str_outro 2" path="ATEM Media Pool/str_outro 2.png"/>
+            <Still index="16" name="campus1 2" path="ATEM Media Pool/campus1 2.png"/>
+            <Still index="17" name="campus2 2" path="ATEM Media Pool/campus2 2.png"/>
         </Stills>
     </MediaPool>
     <CameraControl>
@@ -281,51 +261,64 @@
         <Property device="4" property="Locked" value="False"/>
     </CameraControl>
     <MacroPool>
-        <Macro index="0" name="fade_in_pause" description="fade or intro of some sort with a pause">
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
-            <Op id="MacroSleep" frames="90"/>
+        <Macro index="0" name="rec_intro" description=""/>
+        <Macro index="1" name="rec_outro" description=""/>
+        <Macro index="2" name="rec_trans_pause" description="resume recording, finishing the transition"/>
+        <Macro index="3" name="rec_trans_resume" description="At the end of the recording, add an outro "/>
+        <Macro index="4" name="pause" description="">
+            <Op id="MacroSleep" frames="75"/>
         </Macro>
-        <Macro index="1" name="fade out" description="A recording transition, intro to the transition then stop recording. When ready to proceed, the rest of the transition goes on">
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
+        <Macro index="5" name="DSK_trans_rate" description="set transition rate to be faster for the downstream key">
+            <Op id="DownstreamKeyRate" keyIndex="0" rate="10"/>
         </Macro>
-        <Macro index="2" name="rec_trans_resume" description="resume recording, finishing the transition">
-            <Op id="MediaPlayerSourceStillIndex" mediaPlayer="0" index="3"/>
-            <Op id="MediaPlayerSourceStill" mediaPlayer="0"/>
-            <Op id="MacroSleep" frames="30"/>
-            <Op id="DownstreamKeyAuto" keyIndex="0"/>
+        <Macro index="6" name="RunToA" description="">
+            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="7"/>
+            <Op id="FlyKeyRunToKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
         </Macro>
-        <Macro index="3" name="rec_outro" description="At the end of the recording, add an outro "/>
-        <Macro index="6" name="lb_SetKeyA" description="">
-            <Op id="KeyFlyEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
-            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-9.00002"/>
+        <Macro index="7" name="RunToB" description="">
+            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="7"/>
+            <Op id="FlyKeyRunToKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="1"/>
+        </Macro>
+        <Macro index="8" name="RunToFull" description="">
+            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="7"/>
+            <Op id="FlyKeyRunToFull" mixEffectBlockIndex="0" keyIndex="0"/>
+        </Macro>
+        <Macro index="9" name="lb_setup" description="">
+            <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="1"/>
+            <Op id="DownstreamKeyRate" keyIndex="0" rate="10"/>
+            <Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="False"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="8"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="0"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.630005"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.630005"/>
+            <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera4"/>
+            <Op id="KeyCutInput" mixEffectBlockIndex="0" keyIndex="0" input="Black"/>
+            <Op id="LumaKeyPreMultiply" mixEffectBlockIndex="0" keyIndex="0" preMultiply="True"/>
+        </Macro>
+        <Macro index="10" name="lb_SetKeyA" description="">
+            <Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="False"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="8"/>
             <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="0"/>
             <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.630005"/>
             <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.630005"/>
             <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
         </Macro>
-        <Macro index="7" name="lb_SetKeyB" description="Switch key B to left-handed position">
-            <Op id="KeyFlyEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
-            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="9"/>
+        <Macro index="11" name="lb_SetKeyB" description="">
+            <Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="False"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-8.00002"/>
             <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="0"/>
             <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.630005"/>
             <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.630005"/>
             <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="1"/>
         </Macro>
-        <Macro index="10" name="RunToA" description="">
-            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="10"/>
-            <Op id="FlyKeyRunToKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
-        </Macro>
-        <Macro index="11" name="RunToB" description="">
-            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="10"/>
+        <Macro index="12" name="lb_setALeft" description="For left-handed people, set A to be on the other side. (It may be that you don't want to have controls for both A and B pos).">
+            <Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="False"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-8.00002"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="0"/>
             <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.630005"/>
             <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.630005"/>
-            <Op id="FlyKeyRunToKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="1"/>
-        </Macro>
-        <Macro index="12" name="RunToFull" description="">
-            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="1"/>
-            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="1"/>
-            <Op id="DVEAndFlyKeyRate" mixEffectBlockIndex="0" keyIndex="0" rate="10"/>
-            <Op id="FlyKeyRunToFull" mixEffectBlockIndex="0" keyIndex="0"/>
+            <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
         </Macro>
         <Macro index="14" name="lb_SetLumaKeyBlack" description="Set luma key to black, so that the black color in, for instance, power point files is transparent.">
             <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera4"/>
@@ -368,14 +361,33 @@
             <Op id="MacroSleep" frames="30"/>
             <Op id="DownstreamKeyAuto" keyIndex="0"/>
         </Macro>
+        <Macro index="28" name="setA_corner_head" description="">
+            <Op id="KeyMaskLeft" mixEffectBlockIndex="0" keyIndex="0" left="-10"/>
+            <Op id="KeyMaskTop" mixEffectBlockIndex="0" keyIndex="0" top="9"/>
+            <Op id="KeyMaskRight" mixEffectBlockIndex="0" keyIndex="0" right="10"/>
+            <Op id="KeyMaskBottom" mixEffectBlockIndex="0" keyIndex="0" bottom="-9.00002"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.399994"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.399994"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="10"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-6.00002"/>
+        </Macro>
+        <Macro index="29" name="str_setup" description="Set up for streaming">
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera4"/>
+            <Op id="AdvancedChromaKeySamplingModeEnabled" mixEffectBlockIndex="0" keyIndex="0" enabled="True"/>
+            <Op id="AdvancedChromaKeyCursorXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="32.767"/>
+            <Op id="AdvancedChromaKeyCursorYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-17.1"/>
+            <Op id="KeyMaskEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
+            <Op id="KeyMaskLeft" mixEffectBlockIndex="0" keyIndex="0" left="-10"/>
+            <Op id="KeyMaskTop" mixEffectBlockIndex="0" keyIndex="0" top="9"/>
+            <Op id="KeyMaskRight" mixEffectBlockIndex="0" keyIndex="0" right="10"/>
+            <Op id="KeyMaskBottom" mixEffectBlockIndex="0" keyIndex="0" bottom="-9.00002"/>
+            <Op id="KeyFlyEnable" mixEffectBlockIndex="0" keyIndex="0" enable="True"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="12"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-6.00002"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.410004"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.410004"/>
+            <Op id="FlyKeySetKeyFrame" mixEffectBlockIndex="0" keyIndex="0" keyFrameIndex="0"/>
+        </Macro>
     </MacroPool>
     <MacroControl loop="False"/>
-    <Output>
-        <LiveStream serviceName="YouTube" url="rtmp://a.rtmp.youtube.com/live2" key="" lowLatency="False">
-            <Credentials username="" password=""/>
-            <bitrate low="6000000" high="9000000"/>
-            <audioBitrate low="128000" high="128000"/>
-        </LiveStream>
-        <Record filename="sau_lb_" recordInAllCameras="False"/>
-    </Output>
 </Profile>
