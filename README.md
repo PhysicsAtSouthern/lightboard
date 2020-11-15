@@ -1,3 +1,14 @@
+# Software control of the Blackmagic ATEM Mini (or Mini Pro) with the Bitfocus companion app
+At this writing, the release version of Companion 2.1.0 does not support recording on the ATEM Mini Pro, so I’m using an experimental build of Companion. Kudos to the Companion team and developer Julian Waller for working out how to control the ATEM with the Stream Deck! Check first that there isn't a more recent release that includes Julian's work, but for now you can download the latest experimenta build at this address, search for bmd-atem: https://www.bitfocus.io/companion/download/builds/
+
+
+## Demonstrations
+
+Here’s a short demonstration for my local faculty colleagues demonstrating software control of the Blackmagic ATEM Mini Pro using the Elgato Stream Deck buttons, enabled by the Bitfocus Companion App. I include some graphical elements in my transitions to tie remote students back to campus.
+
+https://youtu.be/Kf-MeCNzPmU
+
+
 # Setting up a Blackmagic ATEM Mini (or Mini Pro) for a lightboard
 
 The Mini pro is controlled over ethernet, and I found the networking component to be the most difficult part. 
