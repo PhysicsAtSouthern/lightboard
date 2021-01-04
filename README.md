@@ -1,15 +1,25 @@
-# Software control of the Blackmagic ATEM Mini (or Mini Pro) with the Bitfocus companion app
-At this writing, the release version of Companion 2.1.0 does not support recording on the ATEM Mini Pro, so I’m using an experimental build of Companion. Kudos to the Companion team and developer Julian Waller for working out how to control the ATEM with the Stream Deck! Check first that there isn't a more recent release that includes Julian's work, but for now you can download the latest experimenta build at this address, search for bmd-atem: https://www.bitfocus.io/companion/download/builds/
+# Information on the SAU Lightboard
+
+## For teachers
+A light board is like a whiteboard, except you never turn your back to your students. All you need to do is press record and teach. 
+
+Oh, you like to share computer graphics to a projector? You can do that on the lightboard too, just connect to an HDMI cable like it's a projector. If you use Powerpoint or Google Slides, a black background becomes transparent on the lightboard. 
+
+## Demonstrations for faculty
+
+Here is an (11 minute conference presentation)[https://youtu.be/jfYyqil9rcM], demonstrating the lightboard technique and how to do it from home. But it may help to try our walk-in studio first!
+
+Here’s a short (demonstration for my local faculty colleagues demonstrating push-button control)[https://youtu.be/Kf-MeCNzPmU]. I include some graphical elements in my transitions to tie remote students back to campus.
 
 
-## Demonstrations
+## Information for developers only
 
-Here’s a short demonstration for my local faculty colleagues demonstrating software control of the Blackmagic ATEM Mini Pro using the Elgato Stream Deck buttons, enabled by the Bitfocus Companion App. I include some graphical elements in my transitions to tie remote students back to campus.
+Software control of the Blackmagic ATEM Mini (or Mini Pro) with the Bitfocus companion app
+Kudos to the Companion team and developer Julian Waller for working out how to control the ATEM with the Stream Deck! Check first that there isn't a more recent release that includes Julian's work, but for now you can download the latest experimenta build at this address, search for bmd-atem: https://www.bitfocus.io/companion/download/builds/
 
-https://youtu.be/Kf-MeCNzPmU
 
 
-# Setting up a Blackmagic ATEM Mini (or Mini Pro) for a lightboard
+## Setting up a Blackmagic ATEM Mini (or Mini Pro) for a lightboard
 
 The Mini pro is controlled over ethernet, and I found the networking component to be the most difficult part. 
 
