@@ -12,17 +12,19 @@ Here is an [11 minute conference presentation](https://youtu.be/jfYyqil9rcM), de
 Here’s a short [demonstration for my local faculty colleagues demonstrating push-button control](https://youtu.be/Kf-MeCNzPmU). I include some graphical elements in my transitions to tie remote students back to campus.
 
 ## AV solution
-The easiest solution is for an individual user to install OBS Studio on their computer and use a webcam. The new Raspberry Pi HQ webcam is great for this, and I have used the (ShowMeWebcam firmware)[https://github.com/showmewebcam/showmewebcam] to create a USB webcam. You can reverse the webcam by editing `camera.txt` in `/boot`. 
+The easiest solution is for an individual user to install OBS Studio on their computer and use a webcam. The new Raspberry Pi HQ webcam is great for this, and I have used the [ShowMeWebcam firmware](https://github.com/showmewebcam/showmewebcam) to create a USB webcam. You can reverse the webcam by editing `camera.txt` in `/boot`. 
 
 *HDMI camera and HDMI computer graphics are combined using the Blackmagic ATEM Mini Pro live production switcher. 
 
-*Software control of the ATEM switcher is achieved using the Bitfocus Companion App. 
+*Software control of the ATEM switcher is achieved using the [Bitfocus Companion](https://bitfocus.io) App. 
 
-*The user uses a macro keyboard to control the Companion app, and we use the (Elgato Stream Deck)[https://www.elgato.com/en/gaming/stream-deck] macro keyboard. The ATEM switcher is the Bitfocus Companion App.
+*The user uses a macro keyboard to control the Companion app, and we use the [Elgato Stream Deck](https://www.elgato.com/en/gaming/stream-deck) macro keyboard. The ATEM switcher is the Bitfocus Companion App.
 
 *The Companion app can run on a computer as simple as the Raspberry Pi 4. 
 
 *The output of the ATEM switcher is a USB-C port. Either the user plugs in a USB drive to record to, or uses a USB cable to plug into their computer as a webcam input for recording or streaming on their computer. 
+
+We happen to use the Datavideo BC-80 block camera, which is fine but seems overpriced. Similar offerings from Marshall could be adequate for half the price. Our lighting wasn't dialed in, so it's hard to judge if the Marshall cameras would be good enough. I haven't figured out how to make the Raspberry Pi HQ camera work as an HDMI camera yet.
 
 ## Setting up a Blackmagic ATEM Mini (or Mini Pro) for a lightboard
 
