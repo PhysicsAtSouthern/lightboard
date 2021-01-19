@@ -1,25 +1,39 @@
 # Information on the SAU Lightboard
 
-## For teachers
+## What is a lightboard? (for teachers)
 A light board is like a whiteboard, except you never turn your back to your students. All you need to do is press record and teach. 
 
 Oh, you like to share computer graphics to a projector? You can do that on the lightboard too, just connect to an HDMI cable like it's a projector. If you use Powerpoint or Google Slides, a black background becomes transparent on the lightboard. 
 
 ## Demonstrations for faculty
 
-Here is an (11 minute conference presentation)[https://youtu.be/jfYyqil9rcM], demonstrating the lightboard technique and how to do it from home. But it may help to try our walk-in studio first!
+Here is an [11 minute conference presentation](https://youtu.be/jfYyqil9rcM), demonstrating the lightboard technique and how to do it from home. But it may help to try our walk-in studio first!
 
-Here’s a short (demonstration for my local faculty colleagues demonstrating push-button control)[https://youtu.be/Kf-MeCNzPmU]. I include some graphical elements in my transitions to tie remote students back to campus.
+Here’s a short [demonstration for my local faculty colleagues demonstrating push-button control](https://youtu.be/Kf-MeCNzPmU). I include some graphical elements in my transitions to tie remote students back to campus.
 
+## AV solution
+The easiest solution is for an individual user to install OBS Studio on their computer and use a webcam. The new Raspberry Pi HQ webcam is great for this, and I have used the [ShowMeWebcam firmware](https://github.com/showmewebcam/showmewebcam) to create a USB webcam. You can reverse the webcam by editing `camera.txt` in `/boot`. 
 
-## Information for developers only
+*HDMI camera and HDMI computer graphics are combined using the Blackmagic ATEM Mini Pro live production switcher. 
 
-Software control of the Blackmagic ATEM Mini (or Mini Pro) with the Bitfocus companion app
-Kudos to the Companion team and developer Julian Waller for working out how to control the ATEM with the Stream Deck! Check first that there isn't a more recent release that includes Julian's work, but for now you can download the latest experimenta build at this address, search for bmd-atem: https://www.bitfocus.io/companion/download/builds/
+*Software control of the ATEM switcher is achieved using the [Bitfocus Companion](https://bitfocus.io) App. 
 
+*The user uses a macro keyboard to control the Companion app, and we use the [Elgato Stream Deck](https://www.elgato.com/en/gaming/stream-deck) macro keyboard. The ATEM switcher is the Bitfocus Companion App.
 
+*The Companion app can run on a computer as simple as the Raspberry Pi 4. 
+
+*The output of the ATEM switcher is a USB-C port. Either the user plugs in a USB drive to record to, or uses a USB cable to plug into their computer as a webcam input for recording or streaming on their computer. 
+
+We happen to use the Datavideo BC-80 block camera, which is fine but seems overpriced. Similar offerings from Marshall could be adequate for half the price. Our lighting wasn't dialed in, so it's hard to judge if the Marshall cameras would be good enough. I haven't figured out how to make the Raspberry Pi HQ camera work as an HDMI camera yet.
 
 ## Setting up a Blackmagic ATEM Mini (or Mini Pro) for a lightboard
+
+### ATEM Software control. 
+The configuration of the Blackmagic Design ATEM Mini switchers are backed up to files ending in .xml.  Needs to be copied to (on a mac) /Library/Application Support/Blackmagic Design/Switchers.
+
+You may load your own graphics specific to your school using the ATEM Software Control. Even if you save the startup state, and the ATEM Mini will "forget" these graphics when powered off, but the ATEM Mini Pro and ATEM Mini ISO will remember them, so it need only be done once!
+
+### Networking
 
 The Mini pro is controlled over ethernet, and I found the networking component to be the most difficult part. 
 
@@ -47,4 +61,13 @@ Router (same as Gateway): 192.168.10.1
 
 *Additional note for Mac: If you're using a WiFi Internet connection, you don't want the Ethernet connection to be seen as the primary connection. Under your list of connections on the left, click the gear icon and choose "Set Service Order." Drag your WiFi connection to the top. This will allow your Internet connection to look to your WiFi first. Click "Okay" to apply these settings. 
 
-The file Streaming.xml needs to be copied to (on a mac) /Library/Application Support/Blackmagic Design/Switchers
+### EXIT the ATEM software control, now we use only Companion
+
+We use the Elgato Stream Deck macro controller to unlock software control of the Blackmagic ATEM Mini (or Mini Pro), using the [Companion app, by Bitfocus](https://www.bitfocus.io/companion).
+Kudos to the Companion team and developer Julian Waller for working out how to control the ATEM with the Stream Deck! 
+
+[Companion is so efficient, it can be run on a Raspberry Pi 4](https://github.com/bitfocus/companion/wiki/Companion-on-the-Raspberry-Pi)! That's right, the Raspberry Pi is the only AV computer required! 
+
+
+Be sure to exit from the Blackmagic ATEM Mini software control when using Companion. Record your macros, upload your graphics when making changes, save the startup state to the ATEM, then you don't need ATEM software control anymore. 
+
